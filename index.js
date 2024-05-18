@@ -8,19 +8,35 @@ const questions = [{
     message: "What is your proect title?",
     name: 'title'
 }, {
-type:'input',
-message:'Short description of the application',
-name:'Description',
+    type: 'input',
+    message: 'Short description of the application',
+    name: 'Description',
 }, {
-   type:''
+    type: 'input',
+    message: 'How to install ?',
+    name: 'installation',
 }, {
-
+    type: 'input',
+    message: 'what can this be used for',
+    name: 'usage'
 }, {
- type: 'list',
+    type: 'input',
+    message: 'add names for all people who should be credited on this project',
+    name: 'contributing'
+}, {
+    type: 'input',
+    message: 'what can this be used for',
+    name: 'usage'
+}, {
+    type: 'list',
     message: "What is the licens being used?",
     name: 'license',
-    choices: ["MIT", "Apache", "IBM", "No License"]
-}
+    choices: ["MIT", "Apache", "IBM", "No License"],
+}, {
+    type: 'input',
+    message: 'what is your email adress and github username this is where you can be reached for any questions',
+    name: 'questions'
+},
 
 ];
 
