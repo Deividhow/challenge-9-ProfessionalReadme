@@ -10,7 +10,7 @@ const questions = [{
 }, {
     type: 'input',
     message: 'Short description of the application',
-    name: 'Description',
+    name: 'description',
 }, {
     type: 'input',
     message: 'How to install ?',
@@ -24,18 +24,18 @@ const questions = [{
     message: 'add names for all people who should be credited on this project',
     name: 'contributing'
 }, {
-    type: 'input',
-    message: 'what can this be used for',
-    name: 'usage'
-}, {
     type: 'list',
-    message: "What is the licens being used?",
+    message: "What is the license being used?",
     name: 'license',
     choices: ["MIT", "Apache", "IBM", "No License"],
 }, {
     type: 'input',
+    message: 'list some test used for this project',
+    name: 'test'
+}, {
+    type: 'input',
     message: 'what is your email adress and github username this is where you can be reached for any questions',
-    name: 'questions'
+    name: 'Questions'
 },
 
 ];
@@ -60,7 +60,7 @@ function init() {
     inquirer
         .prompt(questions)
         .then(data => {
-            writeToFile("./output/README.md", data)
+            writeToFile("./README.md", data)
         })
 
 }
